@@ -1,7 +1,7 @@
 <template>
   <div>
     <nav-bar />
-    <main class="px-7 md:px-[7.5rem]">
+    <main class="px-4 md:px-28">
       <nuxt />
     </main>
     <footer-section />

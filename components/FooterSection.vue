@@ -1,5 +1,5 @@
 <template>
-  <footer class="h-28 bg-brand"></footer>
+  <footer class="h-24 bg-brand"></footer>
 </template>
 
 <script>

@@ -12,8 +12,7 @@ module.exports = {
       colors: {
         brand: '#D9B07C',
         'brand-text': '#DB9035',
-        accent: '#F2E5D9',
-        'accent-2': '#FFFAF4',
+        accent: '#FFFAF4',
       },
     },
   },
