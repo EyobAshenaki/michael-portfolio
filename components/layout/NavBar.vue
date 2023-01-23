@@ -6,9 +6,9 @@
         v-for="(navLink, idx) in navLinks"
         :key="idx"
         class="nav-link"
-        :class="{ active: activeNav === navLink.path }"
+        :class="{ active: activePath(navLink.path) }"
       >
-        <nuxt-link :to="navLink.path">{{ navLink.name }}</nuxt-link>
+        <nuxt-link :to="{ name: navLink.path }">{{ navLink.name }}</nuxt-link>
       </li>
     </ul>
 
@@ -58,15 +58,15 @@ export default {
       navLinks: [
         {
           name: 'Home',
-          path: '/',
+          path: 'index',
         },
         {
           name: 'Journey',
-          path: '/journey',
+          path: 'journey',
         },
         {
           name: 'Portfolio',
-          path: '/portfolio',
+          path: 'portfolio',
         },
       ],
       isMenuClosed: true,
@@ -75,7 +75,7 @@ export default {
 
   computed: {
     activeNav() {
-      return this.$route.path
+      return this.$route.name
     },
   },
 
@@ -109,6 +109,10 @@ export default {
       bottomLine.classList.toggle('-rotate-45')
       bottomLine.classList.toggle('translate-x-1')
       bottomLine.classList.toggle('translate-y-[1px]')
+    },
+
+    activePath(path) {
+      return this.$route.name.includes(path)
     },
   },
 }
