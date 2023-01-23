@@ -2,7 +2,8 @@
   <div>
     <nav-bar />
     <main class="px-4 md:px-28">
-      <nuxt />
+      <nuxt v-if="!$slots.default" />
+      <slot />
     </main>
     <footer-section />
   </div>
