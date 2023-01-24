@@ -1,5 +1,5 @@
 <template>
-  <section class="flex flex-col items-center gap-7">
+  <section class="flex flex-col items-center gap-7 mb-52 md:mb-44">
     <header class="flex flex-col items-center mt-14">
       <h2 class="font-medium text-lg">Journey of</h2>
       <h1 class="font-bold text-xl md:text-2xl text-brand-text">
@@ -57,7 +57,7 @@
           :class="{
             'ml-6': !isIdEven(timelineItem.id),
             '-ml-6': isIdEven(timelineItem.id),
-            '-mb-[35%]': lastTimelineItemIndex === timelineItem.id,
+            '-mb-64': lastTimelineItemIndex === timelineItem.id,
           }"
         >
           <div

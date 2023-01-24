@@ -1,6 +1,6 @@
 <template>
   <default-layout>
-    <main class="pt-3 px-12">
+    <main class="pt-4 px-4 md:px-12">
       <div
         class="flex items-center gap-2.5 cursor-pointer mb-10"
         @click="handleBackClick"

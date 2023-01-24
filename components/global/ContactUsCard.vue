@@ -1,6 +1,6 @@
 <template>
   <div
-    class="w-fit h-fit relative flex flex-col gap-2.5 rounded-3xl bg-accent drop-shadow-[0_8px_18px_#a5733847] p-8 md:p-11 py-6"
+    class="w-fit h-fit relative flex flex-col gap-2.5 rounded-3xl bg-accent drop-shadow-[0_8px_18px_#a5733847] px-8 md:px-11 py-6"
   >
     <falling-star-icon class="absolute top-0 right-0" />
     <header class="font-bold text-lg text-center pb-1">Contact me</header>

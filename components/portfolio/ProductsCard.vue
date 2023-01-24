@@ -19,7 +19,7 @@
     </div>
     <div class="basis-[30%] relative flex justify-end">
       <img
-        class="absolute top-24 right-24 md:right-36 rounded-2xl"
+        class="absolute top-24 right-20 md:right-36 rounded-2xl"
         :src="getImageFront"
         alt="Products Front Image"
       />

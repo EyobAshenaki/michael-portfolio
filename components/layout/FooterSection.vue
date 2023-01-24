@@ -1,6 +1,6 @@
 <template>
   <footer class="h-24 flex justify-end bg-brand">
-    <contact-us-card class="-mt-[15%] mr-[5%]" :class="{ hidden: isHome }" />
+    <contact-us-card class="-mt-36 mr-[5%]" :class="{ hidden: isHome }" />
   </footer>
 </template>
 
