@@ -120,7 +120,7 @@ export default {
 
 <style scoped>
 .nav-bar {
-  @apply h-20 relative flex justify-end lg:justify-center items-center mx-7 md:mx-[7.5rem];
+  @apply h-20 relative flex justify-end lg:justify-center items-center mx-7 md:mx-16 lg:mx-[7.5rem];
 }
 
 .logo {

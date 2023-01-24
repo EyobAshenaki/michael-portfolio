@@ -1,7 +1,7 @@
 <template>
   <div>
     <nav-bar />
-    <main class="px-4 md:px-28">
+    <main class="px-4 lg:px-28">
       <nuxt v-if="!$slots.default" />
       <slot />
     </main>

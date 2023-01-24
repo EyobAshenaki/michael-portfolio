@@ -1,9 +1,9 @@
 <template>
-  <section class="flex flex-col mb-80">
+  <section class="flex flex-col items-center sm:items-start mb-80">
     <header class="font-bold text-3xl text-brand-text mb-6">
       Venture Building
     </header>
-    <p class="mb-20">
+    <p class="text-center sm:text-center mb-20">
       Please see below the journey of my Venture Building Activity. All of this
       was done without raising any capital. All of this was done with a very
       limited budget that I managed to gather from almost a decade of savings

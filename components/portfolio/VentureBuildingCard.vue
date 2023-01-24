@@ -1,16 +1,35 @@
 <template>
-  <div class="flex items-center gap-12" :class="{ 'flex-row-reverse': isEven }">
+  <div
+    class="flex items-center gap-12 mb-10 md:mb-0"
+    :class="{
+      'flex-col sm:flex-row-reverse': isEven,
+      'flex-col sm:flex-row': !isEven,
+    }"
+  >
     <img
       class="basis-1/3 rounded-full"
       :src="getImage"
       alt="Venture Building Image"
     />
     <div class="flex flex-col gap-2.5">
-      <div class="flex justify-between">
+      <div
+        class="flex flex-col md:flex-row justify-between"
+        :class="{
+          'items-center sm:items-end': isEven,
+          'items-center sm:items-start': !isEven,
+        }"
+      >
         <h3 class="font-bold text-xl">{{ item.title }}</h3>
         <h3 class="font-bold text-xl">{{ item.date }}</h3>
       </div>
-      <p>{{ item.description }}</p>
+      <p
+        :class="{
+          'text-center sm:text-left': !isEven,
+          'text-center sm:text-right': isEven,
+        }"
+      >
+        {{ item.description }}
+      </p>
     </div>
   </div>
 </template>
