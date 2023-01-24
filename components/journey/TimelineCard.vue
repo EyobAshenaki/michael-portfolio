@@ -1,8 +1,8 @@
 <template>
   <div
-    class="w-[34rem] flex justify-between items-center -translate-y-1/2 shadow-lg rounded-2xl border border-brand-text px-12 py-10"
+    class="md:w-80 lg:w-[34rem] flex flex-col sm:flex-row md:flex-col lg:flex-row justify-between items-center -translate-y-1/2 shadow-lg rounded-2xl border border-brand-text px-6 lg:px-12 py-5 lg:py-10"
     :class="{
-      '-translate-x-full': isIdEven,
+      'md:-translate-x-full': isIdEven,
     }"
   >
     <p>

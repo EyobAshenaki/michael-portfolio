@@ -46,9 +46,9 @@
     </div>
 
     <!-- Timeline -->
-    <div class="flex justify-center my-36">
+    <div class="flex justify-center my-44 md:my-36">
       <ol
-        class="timeline relative translate-x-1/2 border-l-2 border-brand-text"
+        class="timeline relative md:translate-x-1/2 border-l-2 border-brand-text"
       >
         <li
           v-for="timelineItem in timelineItems"
@@ -56,8 +56,9 @@
           class="mb-10"
           :class="{
             'ml-6': !isIdEven(timelineItem.id),
-            '-ml-6': isIdEven(timelineItem.id),
-            '-mb-64': lastTimelineItemIndex === timelineItem.id,
+            'ml-6 md:-ml-6': isIdEven(timelineItem.id),
+            '-mb-[23rem] sm:-mb-52 md:-mb-[23rem] lg:-mb-64':
+              lastTimelineItemIndex === timelineItem.id,
           }"
         >
           <div
