@@ -1,11 +1,13 @@
 <template>
-  <section class="flex flex-col mb-80">
-    <header class="font-bold text-3xl text-brand-text mb-6">
+  <section class="flex flex-col items-center lg:items-start mb-80">
+    <header class="font-bold text-2xl sm:text-3xl text-brand-text mb-6">
       Decarbonomics Podcast
     </header>
-    <div class="flex justify-between">
-      <div class="basis-[60%] flex flex-col">
-        <p class="mb-10">
+    <div
+      class="flex flex-col-reverse lg:flex-row items-center lg:items-start justify-between gap-8 lg:gap-0"
+    >
+      <div class="lg:basis-[60%] flex flex-col items-center lg:items-start">
+        <p class="text-center lg:text-start mb-10">
           The Decarbonomics Explained podcast features a short-form discussion
           with friends and guests, including sustainability experts,
           enthusiasts, innovators, and anybody with an interest in carbon, the
@@ -23,7 +25,7 @@
         </div>
       </div>
       <img
-        class="basis-[35%] drop-shadow-2xl rounded-xl"
+        class="lg:basis-[35%] w-fit drop-shadow-2xl rounded-xl"
         src="~/assets/images/recent_works/decarbonomics_podcast/decarbonomics_podcast_image.png"
         alt="Decarbonomics Podcast Image"
       />
