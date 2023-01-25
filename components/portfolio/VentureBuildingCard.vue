@@ -7,7 +7,7 @@
     }"
   >
     <img
-      class="basis-1/3 rounded-full"
+      class="basis-1/3 max-w-[13rem] rounded-full"
       :src="getImage"
       alt="Venture Building Image"
     />

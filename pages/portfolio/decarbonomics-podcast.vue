@@ -15,11 +15,11 @@
         </p>
 
         <h3 class="font-bold text-lg mb-5">Listen on:</h3>
-        <div class="flex gap-5">
-          <button class="bg-green-500 rounded-xl px-9 py-3">
+        <div class="flex flex-col sm:flex-row gap-5">
+          <button class="bg-green-500 rounded-xl px-14 sm:px-9 py-3">
             <spotify-text-icon />
           </button>
-          <button class="bg-red-500 rounded-xl py-3 px-9">
+          <button class="bg-red-500 rounded-xl px-14 sm:px-9 py-4">
             <youtube-text-icon />
           </button>
         </div>

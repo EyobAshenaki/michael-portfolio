@@ -76,7 +76,7 @@
       <!-- Lower Left section -->
       <div class="relative hidden md:flex justify-center items-center">
         <!-- Portrait Desktop photo -->
-        <div class="md:absolute -top-32 -left-32">
+        <div class="md:absolute -top-32 -left-40">
           <img
             src="~/assets/images/portrait_photo.png"
             alt="Portrait Photo"
@@ -132,13 +132,18 @@ export default {
 
   methods: {
     handlePortraitHover() {
-      const portrait = document.querySelector('.portrait')
-      const portraitShadow = document.querySelector('.portrait-shadow')
-      portrait.classList.toggle('md:-translate-x-[10%]')
-      portrait.classList.toggle('-translate-x-9')
-      portrait.classList.toggle('-translate-y-5')
-      portraitShadow.classList.toggle('md:scale-110')
-      portraitShadow.classList.toggle('md:scale-100')
+      console.log('HOVERED')
+      const portraits = document.querySelectorAll('.portrait')
+      const portraitShadows = document.querySelectorAll('.portrait-shadow')
+      for (const portrait of portraits) {
+        portrait.classList.toggle('-translate-x-[10%]')
+        portrait.classList.toggle('-translate-x-10')
+        portrait.classList.toggle('-translate-y-5')
+      }
+      for (const portraitShadow of portraitShadows) {
+        portraitShadow.classList.toggle('md:scale-110')
+        portraitShadow.classList.toggle('md:scale-100')
+      }
     },
   },
 }
