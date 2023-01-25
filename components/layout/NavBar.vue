@@ -1,6 +1,8 @@
 <template>
   <nav class="nav-bar">
-    <micheal-testa-icon class="logo" />
+    <nuxt-link :to="{ name: 'index' }">
+      <micheal-testa-icon class="logo" />
+    </nuxt-link>
     <ul class="link-list" :class="{ invisible: isMenuClosed }">
       <li
         v-for="(navLink, idx) in navLinks"

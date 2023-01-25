@@ -14,7 +14,12 @@
     <div class="flex flex-col gap-2">
       <h3 class="font-semibold">Social Medias</h3>
       <div class="flex gap-5">
-        <linkedin-icon />
+        <a
+          href="https://www.linkedin.com/in/michael-testa-82aa71150/"
+          target="_blank"
+        >
+          <linkedin-icon />
+        </a>
       </div>
     </div>
   </div>
