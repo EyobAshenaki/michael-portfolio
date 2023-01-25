@@ -47,6 +47,9 @@
 
     <!-- Timeline -->
     <div class="relative flex justify-center my-44 md:my-36">
+      <timeline-path
+        class="h-[100%] hidden lg:block absolute top-2 left-1/2 -translate-x-[53%] z-[-1]"
+      />
       <ol
         class="timeline relative md:translate-x-1/2 border-l-2 border-brand-text z-[1]"
       >
@@ -73,6 +76,7 @@
 
 <script>
 import TimelineCard from '~/components/journey/TimelineCard.vue'
+import TimelinePath from '~/components/icons/journey/TimelinePath.vue'
 import * as timelineData1 from '~/assets/animations/timeline_data_1.json'
 import * as timelineData2 from '~/assets/animations/timeline_data_2.json'
 import * as timelineData3 from '~/assets/animations/timeline_data_3.json'
@@ -83,6 +87,7 @@ export default {
   name: 'Journey',
   components: {
     TimelineCard,
+    TimelinePath,
   },
 
   data() {
