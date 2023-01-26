@@ -42,7 +42,7 @@ export default {
           title: 'Carbon Miner',
           description:
             'You can do these calculations yourself but why bother when you have it all in one place. This website is for people who want to understand the environmental impact of buying large quantities of commodities.',
-          link: 'greencheddar.earth/business',
+          link: 'https://carboneminer.com/',
           linkText: 'Carbon Miner',
           imageFront: 'products_image_3.png',
           imageBehind: 'products_image_4.png',
